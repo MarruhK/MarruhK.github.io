@@ -1,6 +1,10 @@
-.banner {
+div.banner {
   background-color: #FFA500;
   color: white; 
+}
+
+h1.banner {
+ color: blue; 
 }
 
 h1 {
