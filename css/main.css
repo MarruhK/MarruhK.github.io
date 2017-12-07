@@ -18,4 +18,15 @@ h1.banner {
     color: white; 
 }
 
+.main {
+    width: 70%;    
+    
+}
 
+div {
+ 	/* No external spacing */
+ 	padding: 0;
+
+ 	/* centers block level elements, in this case all divs */
+	margin: auto;
+}
