@@ -5,6 +5,7 @@ body {
 /* -------------------------------------- TOP BANNER -----------------------------------------*/
 div.banner {
     background-color: #FFA500;
+    margin: 0;
     color: white; 
 }
 
