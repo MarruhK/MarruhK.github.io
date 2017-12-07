@@ -1,13 +1,18 @@
+body {
+    margin: 0;
+}
+
+/* -------------------------------------- TOP BANNER -----------------------------------------*/
 div.banner {
     background-color: #FFA500;
     color: white; 
 }
 
 h1.banner {
-    color: blue; 
+    text-align: left;
+    font-size: 32 px;
+    font: Cambria;        
+    color: white; 
 }
 
-h1 {
-    color: blue; 
-}
 
