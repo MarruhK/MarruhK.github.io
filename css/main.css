@@ -1,32 +1,216 @@
 body {
-    margin: 0;
+    margin: 0; 
+    background-color: #C6C7C4;
 }
+
+
+p, h2, h1, a {
+    padding: 0;
+    font-family: Cambria;
+}
+
+p, a {
+    font-size: 14pt;
+}
+
+p {
+   line-height: 2;
+   text-align: left;   
+}   
+
+a {
+    color: inherit;
+}
+
+img:hover{
+    box-shadow: 0px 0px 10px blue; 
+}
+
+
+h2 {
+
+    font-size: 24pt;
+}
+
+h1 {
+    font-size: 30pt;
+    font-family: -apple-system, BlinkMacSystemFont, Cambria;
+}
+
+div {
+    border: none;
+
+    /* No external spacing */
+    padding: 0;
+
+    /* centers block level elements, in this case all divs */
+    margin: auto;
+    text-align: center;
+}
+
+
+
 
 /* -------------------------------------- TOP BANNER -----------------------------------------*/
 div.banner {
-    background-color: #FFA500;
+    background-color: #A2999E;
+    border-bottom: 1px solid black;
     margin: 0;
-    color: white; 
 }
 
 h1.banner {
     text-align: left;
     margin: 0;
-    padding: 15px;
-    font-size: 32 px;
-    font-family: Cambria;        
-    color: white; 
+    padding: 15px 0px 0px 5px;
+    font-size: 40px;
+    font-family: San Francisco;        
+    color: black;
 }
 
-.main {
-    width: 70%;    
+.main-div {
+    width: 85%;
+    background-color: white;
     
 }
 
-div {
- 	/* No external spacing */
- 	padding: 0;
+/* Commented out till I learn JS
+ -------------------------------------- NAV BAR -----------------------------------------
 
- 	/* centers block level elements, in this case all divs */
-	margin: auto;
+
+
+li.nav {
+    display: inline-block;
+    /* makes list hoirzontal 
 }
+
+ul.nav {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    /* above removes dot jots and default margin/padding 
+    
+    overflow: hidden;
+    
+
+    background-color: #EEF0F2;  
+
+    text-align: center; 
+}
+
+
+a.nav {    
+    display: block;
+    /* makes entire link region clickable and not just the text
+       also allows us to specify padding 
+        
+    padding: 9px;
+
+    /* Makes the text in nav bar white 
+    color: black;
+    background-color: #EEF0F2;  
+
+    
+    text-decoration: none;
+        
+}
+
+a.nav:hover {
+    background-color: #D5CFC3;
+    color: rgb(131,60,11);
+}
+
+*/
+/* -------------------------------------- ABOUT -----------------------------------------*/
+
+div.about-me {
+    padding: 5px
+}
+
+h1.headers {
+    padding-top: 50px; 
+    padding-bottom: 30px;
+}
+
+
+/* ---------------------------------- FLEX CONTAINER --------------------------------------*/
+
+div.flex-container {
+    display: flex;
+    /* becomes flexible */
+    flex-direction: row;
+    /* Stacks elements in a row, from left to right */
+    flex-wrap: wrap;
+    /* Goes to next line if the window is shrunk */
+    justify-content: center;
+    /* Horizontal alignment */    
+    align-items: stretch;
+    /* vertical alingment. This vertically stretches elements to make
+    them all equal size */
+}
+
+div.projects {
+    flex-basis: 300px;
+    /* width of the child elements */
+    margin: 0px 30px 30px 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* pretty shadow */
+}
+
+p.projects {
+    text-align: center; 
+
+}
+
+abbr { 
+    border: none;
+    text-decoration: none;
+}
+
+
+
+
+img {
+
+    /* Centers image by changing its display type to block and centering it */
+    display: block;
+    margin: auto;
+
+    border: solid 1px;
+
+    width: 200px;
+    height: 200px;
+}
+
+
+
+
+/* -------------------------------------- FOOTER -----------------------------------------*/
+
+div.footer {
+    width: 85%;
+}
+
+h1.footer {
+    text-align: left;
+}
+
+a.footer {
+    font-size: 18px;
+}
+
+p.footer {
+    font-size: 18px;
+    color: black;
+}
+
+td {
+    padding-right: 20px;  
+    vertical-align: center;
+    text-align: left;
+}
+
+
+
+
