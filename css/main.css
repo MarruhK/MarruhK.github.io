@@ -1,8 +1,7 @@
 body {
     margin: 0; 
     background: white; /* For browsers that do not support gradients */
-    background: linear-gradient(#000046, #1cb5e0); /* Standard syntax (must be last)
-    background-color: #C6C7C4; */
+    background: linear-gradient(#000046, #1cb5e0); /* Gradient background. Must be after the normal BG */
 }
 
 
@@ -24,19 +23,6 @@ a {
     color: inherit;
 }
 
-img:hover{
-    box-shadow: 0px 0px 10px blue; 
-    transition: 0.2s;
-}
-
-hr {
-    width: 200px;
-    border-color: #00ffff;
-
-    margin-bottom: 30px;
-}
-
-
 h2 {
 
     font-size: 24pt;
@@ -44,7 +30,6 @@ h2 {
 
 h1 {
     font-size: 30pt;
-    font-family: -apple-system, BlinkMacSystemFont, Cambria;
 }
 
 div {
@@ -58,8 +43,31 @@ div {
     text-align: center;
 }
 
+hr {
+    width: 200px;
+    border-color: #00ffff;
 
+    margin-bottom: 30px;
+}
 
+abbr { 
+    border: none;
+    text-decoration: none;
+}
+
+img {
+    /* Centers image by changing its display type to block and centering it */
+    display: block;
+    margin: auto;
+
+    width: 200px;
+    height: 200px;
+}
+
+img:hover{
+    box-shadow: 0px 0px 10px blue; 
+    transition: 0.2s;
+}
 
 /* -------------------------------------- TOP BANNER -----------------------------------------*/
 div.banner {
@@ -72,17 +80,10 @@ h1.banner {
     text-align: left;
     margin: 0;
     padding: 15px 0px 0px 5px;
-    font-size: 40px;
-    font-family: San Francisco;        
+    font-size: 40px;       
     color: white;
 }
 
-.main-div {
-    width: 85%;
-    background-color: white;
-    border-radius: 15px;
-    
-}
 
 /* Commented out till I learn JS
  -------------------------------------- NAV BAR -----------------------------------------
@@ -135,6 +136,12 @@ a.nav:hover {
 */
 /* -------------------------------------- ABOUT -----------------------------------------*/
 
+.main-div {
+    width: 85%;
+    background-color: white;
+    border-radius: 15px;    
+}
+
 div.about-me {
     padding: 5px
 }
@@ -165,33 +172,12 @@ div.projects {
     /* width of the child elements */
     margin: 0px 30px 30px 30px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    /* pretty shadow */
+    /* pretty shadow that makes it look like a card */
 }
 
 p.projects {
     text-align: center; 
-
 }
-
-abbr { 
-    border: none;
-    text-decoration: none;
-}
-
-
-
-img {
-
-    /* Centers image by changing its display type to block and centering it */
-    display: block;
-    margin: auto;
-
-    width: 200px;
-    height: 200px;
-}
-
-
-
 
 /* -------------------------------------- FOOTER -----------------------------------------*/
 
@@ -203,13 +189,8 @@ h1.footer {
     text-align: left;
 }
 
-a.footer {
+p.footer, a.footer {
     font-size: 18px;
-}
-
-p.footer {
-    font-size: 18px;
-    color: white;
 }
 
 footer {
@@ -221,7 +202,3 @@ td {
     vertical-align: center;
     text-align: left;
 }
-
-
-
-
