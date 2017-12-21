@@ -1,3 +1,5 @@
+/* -------------------------------------- GENERAL STYLES -----------------------------------------*/
+
 body {
     margin: 0; 
     background: white; /* For browsers that do not support gradients */
@@ -7,7 +9,7 @@ body {
 
 p, h2, h1, a {
     padding: 0;
-    font-family: Cambria;
+    font-family: Cambria; /* expand on this */
 }
 
 p, a {
@@ -15,16 +17,18 @@ p, a {
 }
 
 p {
-   line-height: 2;
    text-align: left;   
 }   
 
 a {
-    color: inherit;
+    color: inherit; /* not blue by default */
+}
+
+h3 {
+    font-size: 20pt;
 }
 
 h2 {
-
     font-size: 24pt;
 }
 
@@ -35,11 +39,11 @@ h1 {
 div {
     border: none;
 
-    /* No external spacing */
     padding: 0;
-
-    /* centers block level elements, in this case all divs */
+    /* No external spacing */
+    
     margin: auto;
+    /* centers block level elements, in this case all divs */
     text-align: center;
 }
 
@@ -68,6 +72,7 @@ img:hover{
     box-shadow: 0px 0px 10px blue; 
     transition: 0.2s;
 }
+
 
 /* -------------------------------------- TOP BANNER -----------------------------------------*/
 div.banner {
@@ -150,6 +155,10 @@ h1.headers {
     padding-top: 50px; 
 }
 
+p.about-me, p.projects {
+    line-height: 2;
+}
+
 
 /* ---------------------------------- FLEX CONTAINER --------------------------------------*/
 
@@ -177,6 +186,7 @@ div.projects {
 
 p.projects {
     text-align: center; 
+    padding: 5px;
 }
 
 /* -------------------------------------- FOOTER -----------------------------------------*/
@@ -202,3 +212,29 @@ td {
     vertical-align: center;
     text-align: left;
 }
+
+
+
+/* -------------------------------------- PROJECT SITE STYLES -----------------------------------------*/
+
+p.list-elements{
+    line-height: 1;    
+    margin: 5px;
+}
+
+img.calc-banner {
+    width: auto;
+    height: auto;
+    display: inline;
+    padding: 10px;
+}
+
+img.calc-banner:hover {
+    box-shadow: none;
+}
+
+.text-div {
+    margin: 10px;
+    padding-bottom: 10px;
+}
+
